@@ -49,7 +49,7 @@ header {
 
 .title {
 	color: gainsboro;
-	font-size: 2.5rem;
+	font-size: 2.25rem;
 	font-weight: 700;
 	margin: 0.5rem 0 0 0;
 	text-align: center;
@@ -68,8 +68,8 @@ header {
 
 .settings-cog {
 	position: absolute;
-	top: 20px;
-	right: 10px;
+	top: 18px;
+	right: 9px;
 	cursor: pointer;
 	transition: 375ms linear all;
 	z-index: 0.5;
@@ -90,8 +90,8 @@ header {
 
 #info-button {
 	position: absolute;
-	top: 20px;
-	left: 10px;
+	top: 18px;
+	left: 9px;
 	cursor: pointer;
 }
 
@@ -116,8 +116,8 @@ header {
 
 #close-info {
 	position: absolute;
-	top: 16px;
-	left: 8px;
+	top: 18px;
+	left: 9px;
 	cursor: pointer;
 }
 
@@ -531,8 +531,8 @@ input:checked + .slider:before {
 
 #stats-button {
 	position: absolute;
-	top: 25px;
-	right: 52px;
+	top: 22.5px;
+	right: 46.8px;
 	cursor: pointer;
 	z-index: 0.5;
 }
