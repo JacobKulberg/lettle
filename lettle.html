@@ -49,7 +49,7 @@
 					</svg>
 				</header>
 				<div id="instructions-container">
-					<p id="instructions">Enter a letter between <span class="square" id="orange">A</span> and <span class="square" id="blue">Z</span></p>
+					<p id="instructions">Enter a letter between <span class="square" id="blue">A</span> and <span class="square" id="orange">Z</span></p>
 				</div>
 				<div id="board-container">
 					<div id="board"></div>
@@ -80,7 +80,7 @@
 				<div class="whole-setting">
 					<div class="setting-container">
 						<h1 class="setting">Alphabetical Keyboard</h1>
-						<label class="setting-description">Keyboard is sorted alphabetically</label>
+						<label class="setting-description">Makes it so the keyboard is sorted alphabetically</label>
 					</div>
 					<div class="switch-container">
 						<label class="switch"><input id="alphabetical" onclick="toggleAlphabeticalKeyboard()" type="checkbox" /><span class="slider round"></span></label>
@@ -94,7 +94,7 @@
 				<div class="whole-setting">
 					<div class="setting-container">
 						<h1 class="setting">Hard Mode</h1>
-						<label class="setting-description">Letters do not gray out when they cannot be the answer</label>
+						<label class="setting-description">Makes it so letters do not gray out when they cannot be the answer</label>
 					</div>
 					<div class="switch-container">
 						<label class="switch"><input id="hard-mode" onclick="toggleHardMode()" type="checkbox" /><span class="slider round"></span></label>
@@ -103,6 +103,21 @@
 				<script>
 					if ((document.cookie.match(/^(?:.*;)?\s*hardMode\s*=\s*([^;]+)(?:.*)?$/) || [, null])[1] == 'true') {
 						toggleHardMode();
+					}
+				</script>
+				<div class="whole-setting">
+					<div class="setting-container">
+						<h1 class="setting">Swap Intruction Letter Colors</h1>
+						<label class="setting-description">Swaps the colors of the letters in the instructions on the top of the game page</label>
+					</div>
+					<div class="switch-container">
+						<label class="switch"><input id="swap-instruction" onclick="swapInstructionLetters()" type="checkbox" /><span class="slider round"></span></label>
+					</div>
+				</div>
+				<script>
+					if ((document.cookie.match(/^(?:.*;)?\s*swapInstruction\s*=\s*([^;]+)(?:.*)?$/) || [, null])[1] == 'true') {
+						document.getElementById('swap-instruction').checked = !document.getElementById('swap-instruction').checked;
+						swapInstructionLetters();
 					}
 				</script>
 			</div>

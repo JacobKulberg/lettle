@@ -717,6 +717,26 @@ function toggleHardMode() {
 	}
 }
 
+function swapInstructionLetters() {
+	if (document.getElementById('swap-instruction').checked) {
+		document.getElementById('blue').style.backgroundColor = '#ad5713';
+		document.getElementById('blue').style.borderColor = '#ad5713';
+		document.getElementById('orange').style.backgroundColor = '#1b8ae4';
+		document.getElementById('orange').style.borderColor = '#1b8ae4';
+
+		let swapCookie = 'swapInstruction=true; path=/; expires=' + expirationDate.toUTCString();
+		document.cookie = swapCookie;
+	} else {
+		document.getElementById('blue').style.backgroundColor = '#1b8ae4';
+		document.getElementById('blue').style.borderColor = '#1b8ae4';
+		document.getElementById('orange').style.backgroundColor = '#ad5713';
+		document.getElementById('orange').style.borderColor = '#ad5713';
+
+		let swapCookie = 'swapInstruction=false; path=/; expires=' + expirationDate.toUTCString();
+		document.cookie = swapCookie;
+	}
+}
+
 function isMobileBrowser() {
 	let check = false;
 	(function (a) {
