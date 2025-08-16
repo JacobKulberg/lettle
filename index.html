@@ -4,37 +4,57 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
-		<meta name="apple-mobile-web-app-capable" content="yes" />
 
-		<meta content="Lettle!" property="og:title" />
-		<meta content="Guess a mystery letter in only 4 tries!" property="og:description" />
-		<meta content="https://toodlenools.com/home/images/lettle.png" property="og:image" />
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-DHM5FG1M2D"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag('js', new Date());
+
+			gtag('config', 'G-DHM5FG1M2D');
+		</script>
+
+		<!-- Open Graph Tags -->
+		<meta property="og:title" content="Lettle" />
+		<meta property="og:description" content="Guess a mystery letter in only 4 tries!" />
+		<meta property="og:url" content="https://www.jacobkulberg.com/projects/lettle" />
+		<meta property="og:image" content="/projects/lettle/images/lettle.png" />
+		<meta property="og:type" content="website" />
+
+		<!-- Twitter Card Tags -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="Lettle" />
+		<meta name="twitter:description" content="Guess a mystery letter in only 4 tries!" />
+		<meta name="twitter:image" content="/projects/lettle/images/lettle.png" />
+		<meta name="twitter:url" content="https://www.jacobkulberg.com/projects/lettle" />
+
 		<meta content="#121213" name="theme-color" />
 		<meta content="#538D4E" property="theme-color" />
 
 		<meta name="title" content="Lettle" />
 		<meta name="description" content="Guess a mystery letter in only 4 tries!" />
-		<meta name="keywords" content="lettle, toodlenools, Lettle, Toodlenools, ToodleNools, toodle nools, Toodle nools, Toodle Nools" />
 
-		<link href="css/lettle.css?v=3" rel="stylesheet" />
-		<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css> <link href=images/lettle-favicon.ico? rel=icon type=image/x-icon sizes=32x32> <link href=images/lettle-favicon-highres.ico? rel=apple-touch-icon type=image/x-icon sizes=192x192>
-		<script src="js/lettle.js?v=3"></script>
-		<script src="js/confetti.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+		<link href="/projects/lettle/css/lettle.css" rel="stylesheet" />
 
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script src="https://www.googletagmanager.com/gtag/js?id=G-9145E63TSV"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
+		<!-- prettier-ignore -->
+		<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css />
+		<link rel="icon" type="image/png" href="/projects/lettle/images/favicon/favicon-96x96.png" sizes="96x96" />
+		<link rel="icon" type="image/svg+xml" href="/projects/lettle/images/favicon/favicon.svg" />
+		<link rel="shortcut icon" href="/projects/lettle/images/favicon/favicon.ico" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/projects/lettle/images/favicon/apple-touch-icon.png" />
+		<link rel="manifest" href="/projects/lettle/images/favicon/site.webmanifest" />
 
-			function gtag() {
-				dataLayer.push(arguments);
-			}
-			gtag('js', new Date());
-			gtag('config', 'G-9145E63TSV');
-		</script>
+		<script src="/projects/lettle/js/lettle.js"></script>
+		<script src="/projects/lettle/js/confetti.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/4.3.0/apexcharts.min.js" integrity="sha512-QgLS4OmTNBq9TujITTSh0jrZxZ55CFjs4wjK8NXsBoZb04UYl8wWQJNaS8jRiLq6/c60bEfOj3cPsxadHICNfw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-		<title>Lettle!</title>
+		<!-- Font Awesome -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+		<title>Lettle</title>
 	</head>
 
 	<body id="body">
@@ -171,7 +191,10 @@
 			</div>
 			<svg onclick="enableEndSplashScreen()" id="stats-button" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32px" height="32px" viewBox="0 0 32 32" version="1.1">
 				<g id="surface1">
-					<path style="stroke: none; fill-rule: nonzero; fill: rgb(255, 255, 255); fill-opacity: 1" d="M 26.667969 7.464844 L 20.621094 7.464844 L 20.621094 4.265625 C 20.621094 3.984375 20.507812 3.710938 20.308594 3.511719 C 20.109375 3.3125 19.839844 3.199219 19.554688 3.199219 L 12.445312 3.199219 C 12.160156 3.199219 11.890625 3.3125 11.691406 3.511719 C 11.492188 3.710938 11.378906 3.984375 11.378906 4.265625 L 11.378906 11.734375 L 5.332031 11.734375 C 5.050781 11.734375 4.777344 11.84375 4.578125 12.046875 C 4.378906 12.246094 4.265625 12.515625 4.265625 12.800781 L 4.265625 21.332031 C 4.265625 21.617188 4.378906 21.886719 4.578125 22.085938 C 4.777344 22.289062 5.050781 22.398438 5.332031 22.398438 L 26.667969 22.398438 C 26.949219 22.398438 27.21875 22.289062 27.421875 22.085938 C 27.621094 21.886719 27.734375 21.617188 27.734375 21.332031 L 27.734375 8.535156 C 27.734375 8.25 27.621094 7.980469 27.421875 7.777344 C 27.21875 7.578125 26.949219 7.464844 26.667969 7.464844 Z M 11.378906 20.265625 L 6.398438 20.265625 L 6.398438 13.867188 L 11.378906 13.867188 Z M 18.488281 8.535156 L 18.488281 20.265625 L 13.511719 20.265625 L 13.511719 5.332031 L 18.488281 5.332031 Z M 25.601562 20.265625 L 20.621094 20.265625 L 20.621094 9.601562 L 25.601562 9.601562 Z M 25.601562 20.265625 " />
+					<path
+						style="stroke: none; fill-rule: nonzero; fill: rgb(255, 255, 255); fill-opacity: 1"
+						d="M 26.667969 7.464844 L 20.621094 7.464844 L 20.621094 4.265625 C 20.621094 3.984375 20.507812 3.710938 20.308594 3.511719 C 20.109375 3.3125 19.839844 3.199219 19.554688 3.199219 L 12.445312 3.199219 C 12.160156 3.199219 11.890625 3.3125 11.691406 3.511719 C 11.492188 3.710938 11.378906 3.984375 11.378906 4.265625 L 11.378906 11.734375 L 5.332031 11.734375 C 5.050781 11.734375 4.777344 11.84375 4.578125 12.046875 C 4.378906 12.246094 4.265625 12.515625 4.265625 12.800781 L 4.265625 21.332031 C 4.265625 21.617188 4.378906 21.886719 4.578125 22.085938 C 4.777344 22.289062 5.050781 22.398438 5.332031 22.398438 L 26.667969 22.398438 C 26.949219 22.398438 27.21875 22.289062 27.421875 22.085938 C 27.621094 21.886719 27.734375 21.617188 27.734375 21.332031 L 27.734375 8.535156 C 27.734375 8.25 27.621094 7.980469 27.421875 7.777344 C 27.21875 7.578125 26.949219 7.464844 26.667969 7.464844 Z M 11.378906 20.265625 L 6.398438 20.265625 L 6.398438 13.867188 L 11.378906 13.867188 Z M 18.488281 8.535156 L 18.488281 20.265625 L 13.511719 20.265625 L 13.511719 5.332031 L 18.488281 5.332031 Z M 25.601562 20.265625 L 20.621094 20.265625 L 20.621094 9.601562 L 25.601562 9.601562 Z M 25.601562 20.265625 "
+					/>
 				</g>
 			</svg>
 			<div id="end-splash-screen-container">

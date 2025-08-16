@@ -1,6 +1,0 @@
-DirectoryIndex lettle.html
-
-Options -Indexes
-
-ErrorDocument 403 https://toodlenools.com/lettle
-ErrorDocument 404 https://toodlenools.com/lettle
